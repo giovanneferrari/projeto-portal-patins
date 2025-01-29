@@ -1,0 +1,151 @@
+@import url(./header.css);
+@import url(./global.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 441px) {
+    
+    body {
+        color: var(--base-text);
+        background-color: var(--bg);
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 1.2rem 3.2rem;
+
+        .cart {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+            margin-right: 1rem;
+            position: relative;
+
+            .notification {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .notification-box::before {
+                    content: '0';
+                    width: 1rem;
+                    height: 1rem;
+                    padding: .5rem;
+                    border-radius: 50%;
+                    background-color: var(--snitap-sun);
+                    transform: translate(50%, -50%);
+                    top: 0;
+                    right: 0;
+                    position: absolute;
+                }
+            }
+        }
+
+        .cart:hover {
+            cursor: pointer;
+
+            svg {
+                transform: translate(45deg);
+            }
+        }
+
+        img:hover {
+            cursor: pointer;
+            transform: rotate(90deg);
+        }
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 4rem 3.2rem;
+        gap: 3.2rem;
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            gap: 4.8rem;
+
+            h1 {
+                font: var(--h1);
+
+                span {
+                    color: var(--snitap-joy-mid);
+                }
+            }
+
+            .buttons {
+                display: flex;
+                gap: 3.3rem;
+
+                .button-buy {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    background-color: var(--snitap-sun);
+                    border-radius: 8rem;
+
+                    padding: 2.4rem 4.8rem;
+                    gap: 1.2rem;
+                    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.1);
+
+                    p {
+                        font: var(--btn-label);
+                        text-transform: uppercase;
+                    }
+                }
+
+                .button-action {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1.2rem;
+
+                    .play {
+                        display: flex;
+                        background-color: var(--bg);
+                        padding: 2.4rem;
+                        box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.1);
+                        border-radius: 8rem;    
+                    }
+
+                    p {
+                        font: var(--btn-label);
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+
+        .image-background {
+            background: url(../assets/icons/Ellipse.svg) no-repeat;
+            position: relative;
+
+            img:nth-child(2) {
+                width: 48.8rem;
+                height: 48.8rem;
+            }
+
+            img:nth-child(1) {
+                position: absolute;
+                top: 25%;
+            }
+
+            img:nth-child(3) {
+                position: absolute;
+                top: 55%;
+                right: 0;
+            }
+        }
+    }
+}

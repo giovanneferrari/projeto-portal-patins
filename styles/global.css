@@ -1,0 +1,22 @@
+:root {
+    font-size: 62.5%;
+    --font-syne: "Syne", serif;
+    --font-montserrat: "Montserrat", serif;
+
+    --snitap-sun: #FFCD1E;
+    --snitap-sky-mid: #06B6D4;
+    --snitap-sky-light: #67E8F9;
+    --snitap-joy-mid: #DB2777;
+    --snitap-joy-light: #F472B6;
+    --snitap-leaf-mid: #16A34A;
+
+    --base-text: #000000;
+    --base-highlight: #000000;
+    --bg: #FAFAFA;
+
+    --h1: bold 6.4rem/125% var(--font-syne);
+    --h2: bold 4.8rem/120% var(--font-syne);
+    --btn-label: 500 1.6rem/150% var(--font-montserrat);
+    --span: 500 1.4rem/150% var(--font-montserrat);
+    --notification: 500 1.2rem/130% var(--font-montserrat);
+}
