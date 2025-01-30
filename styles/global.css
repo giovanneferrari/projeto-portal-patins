@@ -16,6 +16,10 @@
 
     --h1: bold 6.4rem/125% var(--font-syne);
     --h2: bold 4.8rem/120% var(--font-syne);
+    --h3: bold 4rem/120% var(--font-syne);
+    --h4: bold 2rem/120% var(--font-syne);
+    --h1-mob: bold 3.2rem/125% var(--font-syne);
+    --h3-mob: bold 2.4rem/120% var(--font-syne);
     --btn-label: 500 1.6rem/150% var(--font-montserrat);
     --span: 500 1.4rem/150% var(--font-montserrat);
     --notification: 500 1.2rem/130% var(--font-montserrat);
