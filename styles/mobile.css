@@ -27,17 +27,8 @@
                 justify-content: center;
                 align-items: center;
 
-                .notification-box::before {
-                    content: '0';
-                    width: 1rem;
-                    height: 1rem;
-                    padding: .5rem;
-                    border-radius: 50%;
-                    background-color: var(--snitap-sun);
-                    transform: translate(50%, -50%);
-                    top: 0;
-                    right: 0;
-                    position: absolute;
+                span {
+                    font: var(--notification);
                 }
             }
         }
@@ -171,9 +162,7 @@
             width: 31.2rem;
             height: 31.2rem;
             position: relative;
-            animation-name: move;
-            animation-duration: 2.2s;
-            animation-fill-mode: forwards;
+            animation: move 2.2s 1.5s forwards;
 
             img:nth-child(2) {
                 width: 29.5rem;
@@ -204,7 +193,7 @@
 
     .section-secondary {
         margin-block: 4rem;
-        padding-block: 1.6rem;
+        padding-block: 3.2rem;
 
         overflow: hidden;
         white-space: nowrap;
@@ -212,13 +201,21 @@
 
         width: 100%;
         animation: marquee-bg 15s linear infinite forwards;
+        background: linear-gradient(
+            45deg,
+            var(--snitap-sky-light),
+            var(--snitap-joy-light)
+        );
+
 
         .label-animated {
             display: flex;
             align-items: center;
-            gap: 2.4rem;
+            gap: 1rem;
             font: var(--h4);
-            animation: marquee 10s linear infinite; /* Ajuste o tempo conforme necessário */
+            animation: marquee 10s linear infinite;
+            scale: 5;
+
         }
     }
 
@@ -242,7 +239,7 @@
             }
         }
 
-        .gallery-top {
+        .gallery-img {
             margin-top: 2.4rem;
             display: flex;
             flex-direction: column;
@@ -250,26 +247,17 @@
             gap: 2.4rem;
             transition: transform 0.3s ease-in-out;
 
-            img {
-                width: 100%;
-                height: 25.6rem;
-                object-fit: cover;
-                border-radius: 4rem;
-            }
-        }
+            figure {
+                img {
+                    width: 100%;
+                    height: 25.6rem;
+                    object-fit: cover;
+                    border-radius: 4rem;
+                }
 
-        .gallery-bottom {
-            margin-top: 2.4rem;
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            gap: 2.4rem;
-
-            img {
-                width: 100%;
-                height: 25.6rem;
-                object-fit: cover;
-                border-radius: 4rem;
+                figcaption {
+                    display: none;
+                }
             }
         }
     }
