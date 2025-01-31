@@ -490,6 +490,7 @@ html {
            align-items: center;
            gap: 3.2rem;
            font: var(--btn-label);
+           colot: var(--base-text);
 
            a::after {
             content: "";
